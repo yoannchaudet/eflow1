@@ -6,6 +6,9 @@ on:
     paths:
       - .github/flows/hello.js
       - .github/workflows/hello.yml
+  issues:
+    types:
+      - opened
 jobs:
   elevated-flow:
     runs-on: ubuntu-latest
