@@ -13,6 +13,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Run flow
-        uses: yoannchaudet/elevated-flow@main
+        uses: yoannchaudet/elevated-flows@main
         with:
           path: .github/flows/hello.js
