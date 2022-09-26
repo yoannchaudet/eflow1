@@ -8,7 +8,7 @@ flow.onInit("main").do(async () => {
 
 flow
   .onIssue()
-  .withEvent("opened")
+  .withEvent("labeled")
   .withLabel("hello")
   .do(async () => {
     console.log(`hello on context`);

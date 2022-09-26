@@ -8,7 +8,7 @@ on:
       - .github/workflows/hello.yml
   issues:
     types:
-      - opened
+      - labeled
 jobs:
   elevated-flow:
     runs-on: ubuntu-latest
