@@ -1,0 +1,18 @@
+name: Hello flow
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/flows/hello.js
+      - .github/workflows/hello.yml
+jobs:
+  elevated-flow:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Run flow
+        uses: yoannchaudet/elevated-flow@main
+        with:
+          path: .github/flows/hello.js
